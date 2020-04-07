@@ -6,6 +6,22 @@
 	<meta name="author" content="">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/snowfall.jquery.js"></script>
+	<style>
+		html,body{padding:0;margin:0;}
+		.darkBg{background:#3a3a3a;}
+		*{margin:0;padding:0;}
+		body{background-color:#FFF;}
+		.snowfall-flakes{animation:sakura 1s linear 0s infinite;}
+		@keyframes sakura{
+			0% {transform:rotate3d(0, 0, 0, 0deg);}
+			25%{transform:rotate3d(1, 1, 0, 60deg);}
+			50%{transform:rotate3d(1, 1, 0, 0deg);}
+			75%{transform:rotate3d(1, 0, 0, 60deg);}
+			100% {transform:rotate3d(1, 0, 0, 0deg);}
+		}
+	</style>
 </head>
 <body>
 
@@ -99,6 +115,13 @@
 			</ul>
 		</div>
 	</footer><!-- Footer End -->
-
+		<script type='text/javascript'>
+		$(document).ready(function(){
+			$(document).snowfall({image:"./img/1.png", flakeCount:15, minSpeed:1, minSize:8, maxSize:10,});
+            $(document).snowfall({image:"./img/2.png", flakeCount:15, minSpeed:1, minSize:8, maxSize:10,});
+            $(document).snowfall({image:"./img/3.png", flakeCount:15, minSpeed:1, minSize:8, maxSize:10,});
+            $(document).snowfall({image:"./img/4.png", flakeCount:15, minSpeed:1, minSize:8, maxSize:10,});
+		});
+		</script>
 </body>
 </html>
