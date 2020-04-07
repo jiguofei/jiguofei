@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>龟儿徒</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body,html{
+				height: 100%;
+				width: 100%;
+			}
+			body{
+				overflow: hidden;/*隐藏超出部分*/
+				margin: 0;
+				background-image: url(img/2.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+				/*等比例缩小*/
+				background-position: center;
+			}
+			.snowfall-flakes{
+				position: relative;
+				/*相对定位*/
+				margin: 100px auto ;
+				/*width: 200px;
+				height: 200px;*/
+			}
+			.snowfall-flakes::before{/*伪元素，在元素前面加内容*/
+				content: "";
+				position: absolute;
+				/*绝对定位*/
+				/*top: 0;
+				bottom: 0;*/
+				width: 10px;
+				height: 16px;
+				background-color: red;
+				border-radius:5px 5px 0px 0px ;/*圆角属性*/
+				transform: rotate(-45deg);/*变换 旋转  角度*/
+			}
+			.snowfall-flakes::after{
+				content: "";
+				position: absolute;
+				width: 10px;
+				height: 16px;
+				background-color: red;
+				border-radius:5px 5px 0px 0px ;
+				transform:translate(4.3px) rotate(45deg);/*translate 平移*/
+			}
+		</style>
+	</head>
+	<body>
+		
+		<script src="js/jquery-1.2.6.min.js"></script>
+		<script src="js/snowfall.jquery.js"></script>
+		<script>
+			$(document).snowfall({flackCount:60,maxSpeend:10});
+		</script>
+	</body>
+</html>
