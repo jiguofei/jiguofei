@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>龟儿徒</title>
+    <style>
+        @keyframes rotating {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+		body{
+			background-image: url(img/60.gif) ;
+				overflow: hidden;/*隐藏超出部分*/	
+		}
+        .stage-area {
+            perspective: 800px;
+            min-height: 100%;
+            perspective-origin: center 30%;
+        }
+        .container {
+            transform-style: preserve-3d;
+            width: 160px;
+            position: absolute;
+            /*z-index: 3;*/
+            top: 50%;
+            left: 50%;
+            margin-top: -80px;
+            margin-left: -80px;
+            /*animation: rotating 10s linear 3s infinite alternate forwards;*/
+            animation-name: rotating;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            /*animation-delay: 3s;*/
+            animation-iteration-count: infinite;
+            /*animation-direction: alternate;*/
+            /*animation-fill-mode: forwards;*/
+        }
+        .container:hover {
+            animation-play-state: paused;
+        }
+        .container img {
+            border: 3px solid rgba(255, 255, 255, .5);
+        }
+        img {
+            max-width: 100%;
+            position: absolute;
+        }
+        .container a:nth-child(1) img {
+            transform: rotateY(0deg) translateZ(250px);
+        }
+        .container a:nth-child(2) img {
+            transform: rotateY(40deg) translateZ(250px);
+        }
+        .container a:nth-child(3) img {
+            transform: rotateY(80deg) translateZ(250px);
+        }
+        .container a:nth-child(4) img {
+            transform: rotateY(120deg) translateZ(250px);
+        }
+        .container a:nth-child(5) img {
+            transform: rotateY(160deg) translateZ(250px);
+        }
+        .container a:nth-child(6) img {
+            transform: rotateY(200deg) translateZ(250px);
+        }
+        .container a:nth-child(7) img {
+            transform: rotateY(240deg) translateZ(250px);
+        }
+        .container a:nth-child(8) img {
+            transform: rotateY(280deg) translateZ(250px);
+        }
+        .container a:nth-child(9) img {
+            transform: rotateY(320deg) translateZ(250px);
+        }
+        body > img:not(:target) {
+            z-index: -1;
+        }
+		.snowfall-flakes{
+			position: relative;
+			/*相对定位*/
+			margin: 100px auto ;
+			/*width: 200px;
+			height: 200px;*/
+		}
+		.snowfall-flakes::before{/*伪元素，在元素前面加内容*/
+			content: "";
+			position: absolute;
+			/*绝对定位*/
+			/*top: 0;
+			bottom: 0;*/
+			width: 10px;
+			height: 16px;
+			background-color: orangered;
+			border-radius:5px 5px 0px 0px ;/*圆角属性*/
+			transform: rotate(-45deg);/*变换 旋转  角度*/
+		}
+		.snowfall-flakes::after{
+			content: "";
+			position: absolute;
+			width: 10px;
+			height: 16px;
+			background-color: orangered;
+			border-radius:5px 5px 0px 0px ;
+			transform:translate(4.3px) rotate(45deg);/*translate 平移*/
+		}
+    </style>
+</head>
+<body>
+<div class="stage-area">
+    <div class="container">
+        <a href="#t1"><img src="img/1.jpg" /></a>
+        <a href="#t2"><img src="img/2.jpg" /></a>
+        <a href="#t3"><img src="img/3.jpg" /></a>
+        <a href="#t4"><img src="img/4.jpg" /></a>
+        <a href="#t5"><img src="img/5.jpg" /></a>
+        <a href="#t6"><img src="img/6.jpg" /></a>
+        <a href="#t7"><img src="img/7.jpg" /></a>
+        <a href="#t8"><img src="img/8.jpg" /></a>
+        <a href="#t9"><img src="img/9.jpg" /></a>
+    </div>
+	
+</div>
+		<script src="js/jquery-1.2.6.min.js"></script>
+		<script src="js/snowfall.jquery.js"></script>
+		<script>
+			$(document).snowfall({flackCount:50,maxSpeend:20});
+		</script>
+		<embed src="./img/4.mp3" hidden="true" autostart="true" loop="true">
+</body>
+</html>
