@@ -1,0 +1,125 @@
+    body {
+        margin: 0;
+       padding: 0;
+    }
+	.header-nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+    .container{
+        margin:0 auto;
+        width: 1226px;
+    }
+    /* 清除浮动 */
+    .container::before,.container::after,
+    .clearfix::before, .clearfix::after{
+        content: " ";
+        display: table;
+    }
+    .container::after, .clearfix::after{
+        clear:both
+    } 
+    .header{
+        height:100px;
+    }
+    /* 图标边框大小 */
+    .header-logo{
+        float: left;
+        width: 62px;
+        /* height: 55px; */
+        margin-top: 22px;
+         /* border: 1px solid black;  */
+    }
+    /* 左上角图标 */
+    .header-logo a {
+        display:block;
+        width:55px;
+        height:55px;
+        background: url(../image/logo.png) ;
+    }
+    /* 页头导航 */
+    .header-nav{
+        float:left;
+        width:820px;
+        height: 100px;
+        /* border: 1px solid black; */
+    }
+    .header-nav .nav-list{
+        width: 820px;
+        height: 88px;
+        font-size: 16px;
+        padding: 12px 0 0 30px;
+    }
+    .header-nav .nav-list .nav-category{
+        float: left;
+        width: 127px;
+        padding: 0 15px 0 0;
+    }
+    .header-nav .nav-list .nav-category a{
+        display: block;
+        padding: 26px 0 38px;
+        text-align: right;
+        color: #333;
+		text-decoration: none;
+		font-size: 18px;
+    }
+    
+    .header-nav .nav-list .nav-item{
+        float:left;
+    }
+    .header-nav .nav-list .nav-item a{
+        display: block;
+        padding: 26px 10px 38px;
+        color: #333;
+		text-decoration: none;
+		font-size: 18px;
+    }
+    /* 鼠标触碰发生变化 */
+    .header-nav .nav-list .nav-item a:hover{
+        color: #ff6700;
+
+    }
+    /* 搜索框 */
+    .header-search{
+        float: right;
+        width:269px;
+        height: 50px;
+        margin-top: 25px ;
+         /* border: 1px solid black;  */
+    }
+    .header-search .search-form{
+        position: relative;
+        display:block;
+        width: 296px;
+        height: 50px;
+    }
+    .header-search .search-form .search-text{
+        position: absolute;
+        top: 0;
+        right: 51px;
+        display: block;
+        width: 245px;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid #e0e0e0;
+        outline: 0;
+    }
+    .header-search .search-form .search-btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 60px;
+        height: 50px;
+        border: 1px solid #e0e0e0;
+        font-size: 24px;
+        line-height: 24px;
+        background: #fff;
+        color: #616161;
+        outline: 0;
+    }
+    .header-search .search-form .search-btn:hover{
+        background-color: #ff6700;
+        color: #fff;
+    }

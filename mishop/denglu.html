@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米商城登录</title>
+	 <link rel="shortcut icon" href="favicon.ico">
+	<style>
+		body{
+			background: url(http://cdn.fds.api.xiaomi.com/b2c-bbs/cn/attachment/77283fa151e243a2c9f1b64af314fa89.jpg);
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+        .zong{
+            margin: 0px auto;
+			height: 0px;
+			padding: 0;
+		}
+		a {
+			text-decoration: none;
+		}
+	/* 	.fieldset {
+			display: inline-block;
+			width: 340px;
+			margin-top: 70px;
+			color: #999;
+			border: none;
+			border-top: 1px solid #999;
+			text-align: center;
+			font-size: 13px;
+			margin-left: 33px;
+		} */
+		
+		.zong {
+			width: 100%;
+			height: 100%;
+		}
+		
+		.top {
+			width: 100%;
+			height: 100px;
+			background-image: url(img/mistore_logo.png);
+			background-repeat: no-repeat;
+			background-position: 400px;
+		}
+		
+		.banner {
+			width: 100%;
+			height: 588px;
+			background: url(img/pockmon.jpg) no-repeat left;
+		}
+		
+		.banner_box {
+			height: 380px;
+			width: 400px;
+			background-color: rgba(0,0,0,0.5);;
+			position: absolute;
+			right: 70px;
+			margin-top: 44px;
+		}
+		
+		.banner_box input {
+			height: 50px;
+			width: 360px;
+			margin-top: 30px;
+			margin-left: 20px;
+			font-size: 15px;
+		}
+		
+		.dl {
+			display: inline-block;
+			margin-top: 50px;
+			margin: auto;
+			margin-left: 150px;
+			font-size: 22px;
+			color: #f56600;
+			margin-right: 15px;
+			font-family: "微软雅黑";
+		}
+		
+		.sm {
+			display: inline-block;
+			margin-top: 30px;
+			font-size: 22px;
+			margin-left: 15px;
+			color: black;
+			font-family: "微软雅黑";	
+		}
+		.z_zc {
+			font-size: 11px;
+			float: right;
+			margin-top: 20px;
+			margin-right: 18px;
+		}
+		.y_zc {
+			font-size: 11px;
+			float: left;
+			margin-top: 20px;
+			margin-left: 18px;
+		}
+		
+		.img_t {
+			margin-left: 30px;
+			cursor: pointer;
+		}
+		
+		.img_tc {
+			cursor: pointer;
+			margin-left: 90px;
+		}
+		
+		.img {
+			height: 30px;
+			width: 400px;
+			margin: 30px auto;
+			position: absolute;
+			bottom: 13px;
+		}
+		
+		.zhdl {
+			visibility: visible;
+            
+		}
+		
+		.smdl {
+			visibility: hidden;
+			position: absolute;
+			top: 290px;
+			right: 117px;
+		}
+		
+		.smdl p {
+			font-size: 15px;
+			text-align: center;
+		}
+		
+		.footer {
+			width: 100%;
+			height: 170px;
+			background-color: white;
+		}
+		
+		.footer p {
+			padding-top: 60px;
+			text-align: center;
+			color: darkgray;
+			color: #F56600;
+		}
+		
+		.footer li {
+			float: left;
+			
+			list-style: none;
+			margin-left: 30px;
+			font-size: 14px;
+		}
+		
+		.footer .li {
+			margin-left: 780px;
+			font-size: 14px;
+		}
+		
+		.footer ul {
+			padding-top: 90px;
+		}
+		
+		.footer a {
+			color: #F56600;
+		}
+	</style>
+</head>
+
+<body>
+	<!--页面大容器-->
+	<div class="zong">
+		<!--页面头部部分-->
+		<div class="top">
+			<!-- <img class="top_logo" src="img/mistore_logo.png" /> -->
+		</div>
+		<!--页面中部部分-->
+		<div class="banner">
+			<div class="banner_box">
+				<a href="#" class="dl" id="zh" onclick="dl()">账号登录</a>
+				<div class="zhdl" id="zhdl">
+					<form action="xiaomi.html">
+						<input type="text" placeholder="邮箱/手机号/小米ID" />
+						<input type="password" placeholder="请输入密码" />
+						<input style="background-color: #F56600; border: none; color: white;" type="submit" value="登录"/>
+					</form>
+					<span class="y_zc">
+		        <a href="zhuce.html" style="color:;">手机短信登陆/注册</a>
+				</span>
+					<span class="z_zc">
+		        <a href="zhuce.html" style="color:blue;">立即注册</a>
+		        <span>|</span>
+					<a href="#" style="color:blue;">忘记密码?</a>
+					</span>
+				
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var smc = document.getElementById("sm");
+		var dld = document.getElementById("zh");
+		var dljm = document.getElementById("zhdl");
+		var smdl = document.getElementById("smdl");
+
+		function sm() {
+			smc.style.color = "#f56600";
+			dld.style.color = "black";
+			dljm.style.visibility = "hidden";
+			smdl.style.visibility = "visible";
+
+		}
+		function dl() {
+			smc.style.color = "black";
+			dld.style.color = "#f56600";
+			dljm.style.visibility = "visible";
+			smdl.style.visibility = "hidden";
+		}
+	</script>
+</body>
+</html>

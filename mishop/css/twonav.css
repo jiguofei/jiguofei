@@ -1,0 +1,60 @@
+		#box{
+			background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/12a95d14eec558d7ebd585b1b3b725b0.jpg?thumb=1&w=1533&h=575&f=webp&q=90);
+			margin: 10px auto;
+			height: 580px;
+			padding: 0;
+			margin-bottom: 30px;
+		}
+		.nav{
+			background-color: rgba(0,0,0,0.3);
+			height:530px ;
+			width: 280px;
+			padding: 25px 0;
+			position: relative;
+		}
+		.one{
+			padding: 0;
+		}
+		.first{
+			list-style: none;
+			padding: 15px;
+		}
+		.first:hover{
+			background-color: orange;
+		}
+		.first_text{
+			text-align: center;
+			color: #F5F5F5;
+			margin-left: 40px;
+			text-decoration: none;
+		}
+		.first_sp{
+			width: 600px;
+			height: 580px;
+			background-color: #fff;
+			display: none;
+			position: absolute;
+			left: 280px;
+			top: 0;
+		}
+		.first:hover .first_sp{
+			display: block;
+		}
+		.two{
+			float: left;
+			padding-right: 40px;
+		}
+        .second{
+			margin-top: 50px;
+			list-style: none;
+		}
+		.second img{
+			vertical-align: middle;
+		}
+		.second_text:hover{
+			color: orange;
+		}
+		.selected{
+			margin: 0;
+			padding: 0;
+		}

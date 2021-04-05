@@ -1,0 +1,82 @@
+		body{
+			margin: 0;
+		}
+		.top{
+			margin:auto;
+			width: 1450px;
+			height:100px;
+			border-bottom: 3px solid coral;
+		}
+		.logo{
+			float: left;
+		}
+		.logo img{
+			margin-left: 200px;
+			margin-top: 15px;
+			float: left;
+			margin-right: 50px;
+		}
+		.logo h1{
+			width: 600px;
+			font-weight: 350; 
+		}
+		.txt{
+			float: right;
+		}
+	
+		.txt ul {
+			margin-top: 40px;
+		}
+		.txt ul li{
+			float: left;
+			padding: 10px;
+			list-style: none;
+		}
+		.txt ul li >a{
+			text-decoration: none;
+			color: #3F3F3F;
+		}
+		.bodyer{
+			margin:auto;
+			width: 1450px;
+			height: 500px;
+			background-color: #f8f8f8;
+		}
+		.bodyer .img{
+			padding: 100px;
+			margin-left: 200px;
+			float: left;
+		}
+		.body-txt{
+			margin: 0;
+			padding: 180px;
+		}
+		.body-txt h1{
+			color: #ababab;
+		}
+		.body-txt h3{
+			color: #bcbcbc;
+		}
+		.body-txt .butone{
+			padding: 16px 41px;
+			background-color: #f76e38;
+			border: 0;
+			margin-right: 5px;
+		}
+		
+		.body-txt .butone >a{
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+		.body-txt .buttwo{
+			padding: 15px 40px;
+			background-color: #FFFFFF;
+			border: 1px solid #f76e38;
+		}
+		.body-txt .buttwo >a{
+			color: #f76e38;
+			text-decoration: none;
+		}
+		.butone,.buttwo:hover{
+			cursor: pointer;
+		}

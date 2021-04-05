@@ -1,0 +1,53 @@
+.commodity{
+	background-color: #EEEEEE;
+	width: 1450px;
+	height: 5900px;
+	margin-top: 20px;
+}
+.commodity .advert >a img{
+	margin-left: 20px;
+	width: 1380px;
+}
+.commodity .commodity_one>p{
+	font-size: 28px;
+	margin:5px 15px;
+	font-weight: 100;
+}
+.commodity_one .one img{
+	float: left;
+	height: 750px;
+	width: 290px;
+	margin: 10px;
+}
+
+.commodity_one .two{
+   height: 350px;
+   width: 280px;
+   margin:20px 25px;
+    background-color: #ffffff; 
+   text-align: center;
+  /* float: left; */
+}
+.commodity_one .three{
+	float: left;
+	margin-left: 20px;
+}
+.commodity_one .two h4,h5,p{
+	margin: 5px;
+}
+.commodity_one .two h5{
+	color: #979799;
+}
+.commodity_one .two p{
+	color: orange;
+}
+.commodity_one .two:hover{
+	cursor: pointer;
+	transform: translate(0px,-10px);
+	box-shadow:10px 10px 5px #A2A2A2;
+}
+.commodity_one .three:hover{
+	cursor: pointer;
+	transform: translate(0px,-10px);
+	box-shadow:10px 10px 5px #A2A2A2;
+}
